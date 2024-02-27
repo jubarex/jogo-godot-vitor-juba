@@ -11,7 +11,7 @@ const MAX_PEERS = 12
 var peer = null
 
 # Name for my player.
-var player_name = "The Warrior"
+var player_name = "jubarex"
 
 # Names for remote players in id:name format.
 var players = {}
@@ -115,13 +115,15 @@ func begin_game():
 	var world = get_tree().get_root().get_node("World")
 	var player_scene = load("res://player.tscn")
 
+#ver chat gpt
 	# Create a dictionary with peer id and respective spawn points, could be improved by randomizing.
 	var spawn_points = {}
 	spawn_points[1] = 0 # Server in spawn point 0.
 	var spawn_point_idx = 1
+
 	for p in players:
 		spawn_points[p] = spawn_point_idx
-		spawn_point_idx += 1
+		spawn_point_idx = spawn_point_idx + 1
 
 	for p_id in spawn_points:
 		var spawn_pos = world.get_node("SpawnPoints/" + str(spawn_points[p_id])).position
@@ -133,9 +135,14 @@ func begin_game():
 
 
 func end_game():
-	if has_node("/root/World"): # Game is in progress.
+	if has_node("/root/World"): # Game is in progress. 
 		# End it
 		get_node("/root/World").queue_free()
+		
+	#if (has_node == true){
+		#codigo
+	#}
+	
 
 	game_ended.emit()
 	players.clear()

@@ -1,0 +1,7 @@
+res://lobby.tscn
+res://bomb.tscn
+res://gamestate.gd
+res://world.tscn
+res://tileset.tres
+res://rock.tscn
+res://tile_scene.tscn
