@@ -9,7 +9,7 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_m3o4q"]
 resource_local_to_scene = true
 shader = ExtResource("2_4cu41")
-shader_parameter/color = Vector4(1, 1, 1, 0.1)
+shader_parameter/color = Vector4(1, 1, 1, 1)
 shader_parameter/time = 1.0
 shader_parameter/vitor = 1.0
 
@@ -59,6 +59,7 @@ material = SubResource("ShaderMaterial_m3o4q")
 texture = ExtResource("2")
 region_enabled = true
 region_rect = Rect2(96, 0, 48, 48)
+metadata/_edit_group_ = true
 
 [node name="Screenshot15" type="Sprite2D" parent="Sprite"]
 position = Vector2(0.374999, -0.500001)

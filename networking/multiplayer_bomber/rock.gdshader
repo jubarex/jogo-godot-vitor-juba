@@ -10,12 +10,12 @@ uniform float vitor = 1.0; // you can assign a default value to uniforms
 void fragment() {
 	
 //declarar variavel com o VALOR ABSOLUTO DO COSSENO DO TIME
-	 float pulse = sin(TIME);
+	 float pulse = tan(TIME);
 
     // Creating a color gradient based on particle's lifetime
     // Adjust colors as per your preference
-    vec4 start_color = vec4(0.27, 1, 0.2, 1.0); // VERDE
-    vec4 end_color = vec4(1.6, 0.07, 0.91, 0.3); // magenta
+    vec4 start_color = vec4(0.5, 0, 1, 1.0); // roxo
+    vec4 end_color = vec4(1, 0, 0, 0.2); // vermelho
 
     // Interpolating between start and end colors based on particle's lifetime
     vec4 particle_color = mix(start_color, end_color, pulse);
@@ -23,10 +23,10 @@ void fragment() {
 	 // Applying blend_mix to control the blending of colors
     vec4 final_color = vec4(
 //       mix (1 + 1)*0.5 = 1
-        mix(start_color.r, particle_color.r, 0.5),
-        mix(start_color.g, particle_color.g, 0.5),
-        mix(start_color.b, particle_color.b, 0.5),
-        mix(start_color.a, particle_color.a, 0.5)
+        mix(start_color.r, particle_color.r, 1),
+        mix(start_color.g, particle_color.g, 1),
+        mix(start_color.b, particle_color.b, 1),
+        mix(start_color.a, particle_color.a, 1)
     );
 	
 	//= vec4 final_color = vec4(red, green, blue, alpha)
@@ -47,6 +47,6 @@ void fragment() {
 // vertex = coisa que vem por padrão no SHADERS, mexer na posicao dos vértices do objeto
 void vertex() {
  // Animate Sprite2D moving in a big circle around its location
-    VERTEX += vec2(cos(TIME) * 50.0, sin(TIME) * 50.0);
+    VERTEX += vec2(cos(TIME) * 120.0, sin(TIME) * 50.0);
 	VERTEX += vec2(cos(TIME) * 10.0, sin(TIME) * 10.0);
 }
