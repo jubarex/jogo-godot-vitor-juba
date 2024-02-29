@@ -1,6 +1,6 @@
-res://lobby.tscn
+res://rock.tscn
 res://tileset.tres
+res://rock.gdshader
+res://lobby.tscn
 res://world.tscn
 res://tile_scene.tscn
-res://rock.tscn
-res://rock.gdshader
