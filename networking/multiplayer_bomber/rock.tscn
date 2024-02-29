@@ -1,9 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://bao3yernlglws"]
+[gd_scene load_steps=10 format=3 uid="uid://bao3yernlglws"]
 
 [ext_resource type="Script" path="res://rock.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://bdomqql6y50po" path="res://brickfloor.png" id="2"]
+[ext_resource type="Shader" path="res://rock.gdshader" id="2_4cu41"]
 [ext_resource type="Texture2D" uid="uid://c70ont827xmr3" path="res://Screenshot_15.jpg" id="3_i28iv"]
 [ext_resource type="Texture2D" uid="uid://baw52mw160hw8" path="res://Beagle-03-3169896068.jpg" id="4_pxq1r"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m3o4q"]
+resource_local_to_scene = true
+shader = ExtResource("2_4cu41")
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(48, 48)
@@ -47,6 +52,8 @@ motion_mode = 1
 script = ExtResource("1")
 
 [node name="Sprite" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_m3o4q")
+use_parent_material = true
 texture = ExtResource("2")
 region_enabled = true
 region_rect = Rect2(96, 0, 48, 48)

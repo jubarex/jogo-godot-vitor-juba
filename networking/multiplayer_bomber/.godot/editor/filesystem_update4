@@ -3,3 +3,4 @@ res://tileset.tres
 res://world.tscn
 res://tile_scene.tscn
 res://rock.tscn
+res://rock.gdshader
