@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bao3yernlglws"]
+[gd_scene load_steps=8 format=3 uid="uid://bao3yernlglws"]
 
 [ext_resource type="Script" path="res://rock.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://bdomqql6y50po" path="res://brickfloor.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://c70ont827xmr3" path="res://Screenshot_15.jpg" id="3_i28iv"]
+[ext_resource type="Texture2D" uid="uid://baw52mw160hw8" path="res://Beagle-03-3169896068.jpg" id="4_pxq1r"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(48, 48)
@@ -54,6 +55,11 @@ region_rect = Rect2(96, 0, 48, 48)
 position = Vector2(0.374999, -0.500001)
 scale = Vector2(0.325862, 0.313333)
 texture = ExtResource("3_i28iv")
+
+[node name="Beagle-03-3169896068" type="Sprite2D" parent="Sprite/Screenshot15"]
+position = Vector2(1.91799, 4.78724)
+scale = Vector2(0.0537037, 0.0558511)
+texture = ExtResource("4_pxq1r")
 
 [node name="Shape" type="CollisionShape2D" parent="."]
 shape = SubResource("1")
