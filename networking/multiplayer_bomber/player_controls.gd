@@ -13,12 +13,24 @@ func update():
 	var m = Vector2()
 	if Input.is_action_pressed("move_left"):
 		m += Vector2(-1, 0)
+		$AudioStreamPlayer2D.play()
 	if Input.is_action_pressed("move_right"):
 		m += Vector2(1, 0)
+		$AudioStreamPlayer2D.play()
 	if Input.is_action_pressed("move_up"):
 		m += Vector2(0, -1)
+		$AudioStreamPlayer2D.play()
 	if Input.is_action_pressed("move_down"):
 		m += Vector2(0, 1)
+		$AudioStreamPlayer2D.play()
+		
+		
+	
 
 	motion = m
 	bombing = Input.is_action_pressed("set_bomb")
+
+
+
+
+	

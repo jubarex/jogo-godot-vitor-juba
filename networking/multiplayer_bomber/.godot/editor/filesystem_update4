@@ -1,11 +1,6 @@
-res://lobby.tscn
-res://tileset.tres
-res://rock.gdshader
-res://world.tscn
-res://tile_scene.tscn
-res://rock.tscn
-res://player.tscn
-res://player.gd
 res://bomb.tscn
 res://bomb.gd
-res://BombArea2D.gd
+res://player.gd
+res://rock.gdshader
+res://player.tscn
+res://player_controls.gd

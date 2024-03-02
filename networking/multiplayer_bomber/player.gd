@@ -56,6 +56,7 @@ func _physics_process(delta):
 		new_anim = "walk_left"
 	elif inputs.motion.x > 0:
 		new_anim = "walk_right"
+		
 
 	if stunned:
 		new_anim = "stunned"
