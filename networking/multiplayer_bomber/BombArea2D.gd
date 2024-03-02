@@ -1,4 +1,5 @@
-extends CharacterBody2D
+extends Area2D
+
 
 var in_area: Array = []
 var from_player: int

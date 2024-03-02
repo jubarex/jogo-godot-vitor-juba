@@ -1,7 +1,9 @@
 extends CharacterBody2D
 
-const MOTION_SPEED = 90.0
-const BOMB_RATE = 0.5
+
+
+@export var MOTION_SPEED = 180
+@export var BOMB_RATE = 0.5
 
 @export
 var synced_position := Vector2()

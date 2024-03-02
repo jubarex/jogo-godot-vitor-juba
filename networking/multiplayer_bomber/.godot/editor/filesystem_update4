@@ -4,3 +4,8 @@ res://rock.gdshader
 res://world.tscn
 res://tile_scene.tscn
 res://rock.tscn
+res://player.tscn
+res://player.gd
+res://bomb.tscn
+res://bomb.gd
+res://BombArea2D.gd
